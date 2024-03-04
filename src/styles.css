@@ -28,10 +28,22 @@ button {
   justify-content: space-between;
   padding-block: 1.5rem;
 }
+&__menu {
+  @media (width < 40em) {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: rgb(80, 80, 184);
+    flex-direction: column;
+  }
+}
 &__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
-&__items {
+&__item {
   list-style-type: none;
 }
